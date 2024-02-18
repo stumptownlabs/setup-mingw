@@ -1,7 +1,7 @@
 Set up MinGW-w64
 ================
 
-[![Test](https://github.com/egor-tensin/setup-mingw/actions/workflows/test.yml/badge.svg)](https://github.com/egor-tensin/setup-mingw/actions/workflows/test.yml)
+[![Test](https://github.com/stumptownlabs/setup-mingw/actions/workflows/test.yml/badge.svg)](https://github.com/stumptownlabs/setup-mingw/actions/workflows/test.yml)
 
 This GitHub action sets up MinGW-w64 in your workflow run.
 
@@ -13,7 +13,7 @@ This GitHub action sets up MinGW-w64 in your workflow run.
 Use it in your workflow like this:
 
     - name: Set up MinGW
-      uses: egor-tensin/setup-mingw@v2
+      uses: stumptownlabs/setup-mingw@v2
       with:
         platform: x64
 
@@ -25,7 +25,7 @@ installation (see [my other action] for setting up Cygwin itself).
 executables.
 Disable this by setting the `cc` parameter to `0`.
 
-[my other action]: https://github.com/egor-tensin/setup-cygwin
+[my other action]: https://github.com/stumptownlabs/setup-cygwin
 
 API
 ---
