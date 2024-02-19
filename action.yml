@@ -184,8 +184,9 @@ runs:
             echo $mingw_bin >> $env:GITHUB_PATH
 
             # Debug output to verify the path
-            Write-Host "Adding MinGW bin path to GITHUB_PATH: $mingw_bin"
-            Write-Host "Current PATH: $env:PATH"
+            Write-Host "Adding MinGW bin path to GITHUB_PATH: $mingw_bin""
+
+            Get-ChildItem -Path $mingw_bin"
 
             if ($static_workaround) {
                 Remove-Item (Join-Path $mingw_lib 'libpthread.dll.a') -ErrorAction SilentlyContinue
