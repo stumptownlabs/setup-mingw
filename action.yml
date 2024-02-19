@@ -157,7 +157,13 @@ runs:
             $mingw64 = 'mingw64'
             $mingw = if ($x64) { $mingw64 } else { $mingw32 }
 
-            $mingw_install = Join-Path C: ProgramData mingw64
+            # Conditional logic based on the MinGW version supplied
+            # Set installation path based on version
+            if ($mingw_version -ne "12.2.0" -and $mingw_version -ne "8.1.0") {
+                $mingw_install = Join-Path "C:" "ProgramData" "mingw64"
+            } else {
+                $mingw_install = Join-Path "C:" "ProgramData" "chocolatey" "lib" "mingw" "tools" "install"
+            }
             $mingw_root = Join-Path $mingw_install $mingw
             $mingw_bin = Join-Path $mingw_root bin
             $mingw_lib = Join-Path $mingw_root $prefix lib
