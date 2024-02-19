@@ -1,7 +1,25 @@
+=======================================================================
+Software under third_party
+=======================================================================
+
+This project uses third party material from the projects listed below. The
+original copyright notice and the license under which Stumptown Labs received
+such Third Party OSS, are set forth below. Such licenses and notices are
+provided for informational purposes only. Stumptown Labs licenses the Third
+Party OSS to you under the licensing terms for the Stumptown Labs product or
+service. Stumptown Labs reserves all other rights not expressly granted under
+this agreement, whether by implication, estoppel or otherwise.
+
+
+============================================================
+Notices for file(s):
+egor-tensin/setup-mingw
+https://github.com/egor-tensin/setup-mingw
+------------------------------------------------------------
+
 MIT License
 
 Copyright (c) 2020 Egor Tensin <Egor.Tensin@gmail.com>
-Copyright (c) 2024 Stumtpown Labs, LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -20,3 +38,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+------------

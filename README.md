@@ -3,7 +3,7 @@ Set up MinGW-w64
 
 [![Test](https://github.com/stumptownlabs/setup-mingw/actions/workflows/test.yml/badge.svg)](https://github.com/stumptownlabs/setup-mingw/actions/workflows/test.yml)
 
-This GitHub action sets up MinGW-w64 in your workflow run.
+This GitHub action sets up MinGW-w64 in your workflow run. This code is forked an updated from [egor-tensin/setup-mingw@v2](https://github.com/egor-tensin/setup-mingw)
 
 1. Installs MinGW-w64 on either Ubuntu or Windows.
 2. Fixes the infamous libwinpthread-1.dll [static linking issue].
@@ -25,7 +25,6 @@ installation (see [my other action] for setting up Cygwin itself).
 executables.
 Disable this by setting the `cc` parameter to `0`.
 
-[my other action]: https://github.com/stumptownlabs/setup-cygwin
 
 API
 ---
