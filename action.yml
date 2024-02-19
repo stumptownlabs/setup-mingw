@@ -157,7 +157,7 @@ runs:
             $mingw64 = 'mingw64'
             $mingw = if ($x64) { $mingw64 } else { $mingw32 }
 
-            $mingw_install = Join-Path C: ProgramData chocolatey lib mingw tools install
+            $mingw_install = Join-Path C: ProgramData mingw64
             $mingw_root = Join-Path $mingw_install $mingw
             $mingw_bin = Join-Path $mingw_root bin
             $mingw_lib = Join-Path $mingw_root $prefix lib
@@ -186,7 +186,7 @@ runs:
             # Debug output to verify the path
             Write-Host "Adding MinGW bin path to GITHUB_PATH: $mingw_bin"
 
-            Get-ChildItem -Path C:\ProgramData\mingw64
+            Get-ChildItem -Path $mingw_bin"
 
             if ($static_workaround) {
                 Remove-Item (Join-Path $mingw_lib 'libpthread.dll.a') -ErrorAction SilentlyContinue
