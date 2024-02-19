@@ -50,7 +50,7 @@ jobs:
       fail-fast: false
       matrix:
         platform: [x86, x64]
-        os: [windows-latest]
+        os: [ubuntu-20.04, ubuntu-22.04, ubuntu-latest, windows-2019, windows-2022, windows-latest]
     runs-on: '${{ matrix.os }}'
     name: 'Test: ${{ matrix.os }} / ${{ matrix.platform }}'
     defaults:
@@ -80,7 +80,7 @@ jobs:
   different_versions:
     strategy:
       matrix:
-        version: ['8.1.0', '12.2.0']
+        version: ['8.1.0', '12.2.0', '13.2.0']
     runs-on: windows-latest
     name: 'Version: ${{ matrix.version }}'
     defaults:
