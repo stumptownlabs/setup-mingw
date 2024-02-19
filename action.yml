@@ -159,10 +159,14 @@ runs:
 
             # Conditional logic based on the MinGW version supplied
             # Set installation path based on version
-            if ($mingw_version -ne "12.2.0" -and $mingw_version -ne "8.1.0") {
-                $mingw_install = Join-Path "C:" "ProgramData" "mingw64"
+            if ($mingw_version_supplied) {
+                if ($mingw_version -eq "12.2.0" -or $mingw_version -eq "8.1.0") {
+                    $mingw_install = Join-Path "C:" "ProgramData" "chocolatey" "lib" "mingw" "tools" "install"
+                } else {
+                    $mingw_install = Join-Path "C:" "ProgramData" "mingw64"
+                }
             } else {
-                $mingw_install = Join-Path "C:" "ProgramData" "chocolatey" "lib" "mingw" "tools" "install"
+                $mingw_install = Join-Path "C:" "ProgramData" "mingw64"
             }
             $mingw_root = Join-Path $mingw_install $mingw
             $mingw_bin = Join-Path $mingw_root bin
