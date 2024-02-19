@@ -1,5 +1,5 @@
 name: Install MinGW Multi-Version
-description: Install MinGW-w64: 13.2.0, 12.2.0, 8.1.0
+description: Install MinGW-w64 13.2.0, 12.2.0, 8.1.0
 
 inputs:
   platform:
